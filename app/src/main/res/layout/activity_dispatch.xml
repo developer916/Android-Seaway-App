@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorWhite"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:contentInsetStart="0dp">
+
+            <TextView
+                android:id="@+id/app_bar_title"
+                style="@style/font_subtitle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/add_dispatch"
+                android:textColor="@color/colorPrimary" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dispatch_type"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <TextView
+                        android:id="@+id/dispatch_type"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:gravity="center_vertical"
+                        android:hint="@string/dispatch_type"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"
+                        android:layout_marginBottom="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item_type"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+                    <TextView
+                        android:id="@+id/item_type"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/item_type"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"
+                        android:layout_marginBottom="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customer"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <TextView
+                        android:id="@+id/customer"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/customer"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/year"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/year"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:clickable="true"
+                        android:inputType="text"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/year"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"
+                        android:layout_marginBottom="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/make"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/make"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:clickable="true"
+                        android:inputType="text"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/make"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"
+                        android:layout_marginBottom="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/model"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+
+                    <EditText
+                        android:id="@+id/model"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:clickable="true"
+                        android:inputType="text"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/model"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vin"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/vin"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:clickable="true"
+                        android:inputType="text"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/vin"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/color"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/color"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/color"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buyer"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <TextView
+                        android:id="@+id/buyer"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/buyer"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lot"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/lot"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/lot"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <TextView
+                        android:id="@+id/title"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/title"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keys"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <TextView
+                        android:id="@+id/keys"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/keys"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pickup_location"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <TextView
+                        android:id="@+id/pickup_location"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/pickup_location"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drop_off_location"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <TextView
+                        android:id="@+id/drop_off_location"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/drop_off_location"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transporter"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <TextView
+                        android:id="@+id/transporter"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/transporter"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/price"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:inputType="numberDecimal"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/price"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/storage_fee"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/storage_fee"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:inputType="numberDecimal"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/storage_fee"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/other_fee"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+
+                    <EditText
+                        android:id="@+id/other_fee"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="16dp"
+                        android:inputType="numberDecimal"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/other_fee"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/order_date"
+                            android:layout_weight="1"
+                            style="@style/font_caption"
+                            android:gravity="left"/>
+
+                        <CheckBox
+                            android:id="@+id/order_date_null"
+                            style="@style/font_caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/set_null"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/order_date"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/order_date"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"
+                        android:textColor="@color/colorBlack"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/pickup_date"
+                            android:layout_weight="1"
+                            style="@style/font_caption"
+                            android:gravity="left"/>
+
+                            <CheckBox
+                                android:id="@+id/pickup_date_null"
+                                style="@style/font_caption"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/set_null"
+                                android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/pickup_date"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/pickup_date"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"
+                        android:textColor="@color/colorBlack"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/delivery_date"
+                            android:layout_weight="1"
+                            style="@style/font_caption"
+                            android:gravity="left"/>
+
+                        <CheckBox
+                            android:id="@+id/delivery_date_null"
+                            style="@style/font_caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/set_null"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/delivery_date"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/delivery_date"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"
+                        android:textColor="@color/colorBlack"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/delivered_date"
+                            android:layout_weight="1"
+                            style="@style/font_caption"
+                            android:gravity="left"/>
+
+                        <CheckBox
+                            android:id="@+id/delivered_date_null"
+                            style="@style/font_caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/set_null"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/delivered_date"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/delivered_date"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"
+                        android:textColor="@color/colorBlack"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paid"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <TextView
+                        android:id="@+id/paid"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/paid"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/check_linearlayout"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/check"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:focusableInTouchMode="true"
+                        android:inputType="text"
+                        android:gravity="center_vertical"
+                        android:hint="@string/check"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cashed"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <TextView
+                        android:id="@+id/cashed"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/cashed"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pickup"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <TextView
+                        android:id="@+id/pickup"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/pickup"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vehicle_width"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/vehicle_width"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:inputType="numberDecimal"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/vehicle_width"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vehicle_length"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/vehicle_length"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:inputType="numberDecimal"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/vehicle_length"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vehicle_height"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/vehicle_height"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:inputType="numberDecimal"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/vehicle_height"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vehicle_weight"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/vehicle_weight"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:inputType="numberDecimal"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/vehicle_weight"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cbm"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <EditText
+                        android:id="@+id/cbm"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:inputType="text"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/cbm"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dispatch_order_id"
+                        android:layout_marginBottom="8dp"
+                        style="@style/font_caption"/>
+
+                    <TextView
+                        android:id="@+id/dispatch_order_id"
+                        style="@style/font_subtitle_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/dispatch_input_box"
+                        android:layout_marginBottom="56dp"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/dispatch_order_id"
+                        android:maxLines="1"
+                        android:minWidth="100dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColorHint="@color/colorWhite1"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp">
+
+                    <Button
+                        style="@style/font_button"
+                        android:id="@+id/post_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/add_dispatch"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorWhite" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <include layout="@layout/widget_loading" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Seaway</string>
+    <string name="user_name">User Name</string>
+    <string name="user_password">Password</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="add_dispatch">Add Dispatch</string>
+    <string name="welcome">Welcome ! </string>
+    <string name="logout_text">Do you want to really log out ? </string>
+    <string name="logout_ok">Ok</string>
+    <string name="logout_cancel">Cancel</string>
+    <string name="vincode_scan">VinCode Scan</string>
+    <string name="scan_error_invalid_qr_code">Invalid QR Code. Please try another one.</string>
+    <string name="no_camera_permission">No Camera Permission!</string>
+    <string name="enter_vin">Enter Vin</string>
+    <string name="dispatch_type">Dispatch Type</string>
+    <string name="item_type">Item Type</string>
+    <string name="customer">Customer</string>
+    <string name="year">Year</string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="vin">VIN</string>
+    <string name="color">Color</string>
+    <string name="buyer">Buyer</string>
+    <string name="lot">LOT</string>
+    <string name="title">Title</string>
+    <string name="keys">Keys</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="drop_off_location">Drop Off Location</string>
+    <string name="transporter">Transporter</string>
+    <string name="price">Price</string>
+    <string name="storage_fee">Storage Fee</string>
+    <string name="other_fee">Other Fee</string>
+    <string name="order_date">Order Date</string>
+    <string name="pickup_date">Pickup Date</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="delivered_date">Delivered Date</string>
+    <string name="paid">Paid</string>
+    <string name="cashed">Cashed</string>
+    <string name="pickup">Pickup</string>
+    <string name="vehicle_width">Vehicle Width</string>
+    <string name="vehicle_length">Vehicle Length</string>
+    <string name="vehicle_height">Vehicle Height</string>
+    <string name="vehicle_weight">Vehicle Weight</string>
+    <string name="cbm">CBM</string>
+    <string name="dispatch_order_id">Dispatch OrderID</string>
+    <string name="check">Check</string>
+    <string name="image_upload">Image Upload</string>
+    <string name="please_select_one_image">Please select one image for upload</string>
+    <string name="finish">Finish</string>
+    <string name="current_dispatch">Current Dispatch</string>
+
+    <!-- Select buttons-->
+
+    <string name="select_dispatch_type">Select Dispatch Type</string>
+    <string name="select_item_type">Select Item Type</string>
+    <string name="select_buyer">Select Buyer</string>
+    <string name="select_title">Select Title</string>
+    <string name="select_keys">Select Keys</string>
+    <string name="customers">Customers</string>
+    <string name="search">Search</string>
+    <string name="set_null">N/A</string>
+    <string name="item_dispatch_order_id">OrderID : </string>
+    <string name="item_customer">Customer : </string>
+
+    <!-- Error show -->
+    <string name="invalid_request">Invalid Request</string>
+    <string name="error_user_name_can_not_be_empty">Username can not be empty!</string>
+    <string name="error_password_can_not_be_empty">Password can not be empty!</string>
+    <string name="failure_error">Please check your network connection and internet permission.</string>
+    <string name="failure_wrong_format">Failure: Invalid Response</string>
+    <string name="invalid_user_name_or_password">Username or Password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+</resources>

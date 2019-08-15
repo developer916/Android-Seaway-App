@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                style="@style/font_bill_title"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/item_dispatch_order_id"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/dispatch_order_id"
+                style="@style/font_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SC20190425000001"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                style="@style/font_bill_title"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/item_customer"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/dispatch_customer"
+                style="@style/font_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SC20190425000001"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/addDispatch"
+        android:title="@string/add_dispatch"
+        android:icon="@drawable/ic_language"/>
+    <item
+        android:id="@+id/currentDispatch"
+        android:title="@string/current_dispatch"
+        android:icon="@drawable/ic_spos_address"
+        />
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_logout"
+        />
+</menu>
